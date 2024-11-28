@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <pagename>
+        {% block pagename %}
+            <h1> {{ title }}</h1>
+        {% endblock %}
+
+    </pagename>
+    <menublock>
+        {% block menu %}
+            <a href="#"><h2>Главная</h2></a>
+            <a href="/platform/games"><h2>Магазин</h2></a>
+            <a href="/platform/cart"><h2>Корзина</h2></a>
+        {% endblock %}
+    </menublock>
+    <content>
+        {% block content %}
+            <p> 2024, Продажа игр, цветы завяли </p>
+        {% endblock %}
+    </content>
+</body>
+</html>
